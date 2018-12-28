@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 var bluebird = require('bluebird');
-var cors = require('cors');
 
 // var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
@@ -52,7 +51,5 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-app.use(cors());
 
 module.exports = app;
