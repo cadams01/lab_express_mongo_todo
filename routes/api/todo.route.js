@@ -1,5 +1,6 @@
 var express = require('express')
 var router = express.Router()
+var cors = require('cors');
 
 // Getting the Todo Controller that we just created
 var ToDoController = require('../../controllers/todo.controller.js');
